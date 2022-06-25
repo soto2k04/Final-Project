@@ -1,73 +1,225 @@
-h1
+html
 {
-	color:black;
+	height: 100%;
+}
 
+
+header
+{
+	width: 100%;
+	min-width: 800px;
+	/* height: 7.5vh; */
+	/* min-height: 10px; */
+	background-color: snow;
+	position: sticky;
+	top: 0px;
+	font-size: 30px;
+}
+
+nav
+{
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	background-color: gainsboro;
+	text-align: center;
+	/* vertical-align: middle; */
+	/* position: relative; */
+	vertical-align: middle;
+	position: sticky;
+	clear:left;
 }
 nav ul li
 {
 	display: inline-block;
+	width: 300px;
+	text-align: center;
+	vertical-align: top;
+	font-size: 20px;
+	margin: -25px;
 }
-ul li
+
+h1
 {
-	list-style-type:none;
+	/* font-family: 'Ballet', cursive; */
+	/* font-family: 'Beau Rivage', cursive; */
+	font-family: 'Cairo', sans-serif;
+	/* font-family: 'Great Vibes', cursive; */
+	/* font-family: 'Parisienne', cursive; */
+	/* font-size: 70px; */
+	font-weight: 400;
+	font-optical-sizing: none;
+	width: 100%;
+	text-align: left;
+	margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
-header
+h1::first-letter
+{
+	font-family: 'Ballet', cursive;
+	font-size: 175%;
+}
+
+a:link
+{
+	color:darkred;
+	text-decoration: none;
+}
+a:visited 
+{
+	color: green;
+}
+
+a:hover
+{
+	color:red;
+	font-size: 110%;
+}
+  
+a:active
+{
+	color: blue;
+}
+
+body
 {
 	width: 100%;
-	height: 10vh;
-	background-color: pink;
-	position: sticky;
-	top: 0px;
+	min-height: 100%;
+	font-family: Cairo,sans-serif;
+	position: relative;
+	background-color: #fff;
+	/* border: 1px solid black; */
+	/* font-size: 50px; */
+    /* text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased; */
 }
-nav
+
+main
 {
-	
-	width: 100%;
-	height: 25px;
-	background-color: gainsboro;
-	text-align: right;
-	position: sticky;
-	top: 10vh;
+	/* box-sizing: border-box;
+	border-style: inset;
+	background-color: transparent;
+	float: left; */
 }
-/* main
+
+/* nav ul li
 {
-	width: 70%;
-	height: 70px;
-	background-color: blue;
-	float: left;
+	display: inline-block;
+	width: 200px;
+	vertical-align: middle;
 } */
-section
+/* nav ul li img
 {
-	width: 100%;
-	height: 50px;
-	background-color: antiquewhite;
+	width: 30px;
+	height: 30px;
+} */
 
-}
-article
-{
-	width: 100%;
-	height: 50px;
-	background-color: aquamarine;
-
-}
-aside
-{
-	width: 30%;
-	height: 200px;
-	background-color: orange;
-	float: left;
-}
 footer
 {
+	display: inline-block;
 	width: 100%;
-	height: 5vh;
-	background-color: cyan;
+	height: 50px;
 	clear: left;
 }
-.column
+footer nav ul li
+{
+	display: inline-block;
+	width: 250px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* *
+{
+	box-sizing: border-box;
+} */
+
+.font10
+{
+	font-size: 10px;
+}
+.font15
+{
+	font-size: 15px;
+}
+.font20
+{
+	font-size: 20px;
+}
+.font25
+{
+	font-size: 25px;
+}
+
+.leftmargin
+{
+	margin-left: 10px;
+}
+.center
+{
+	/* width: 100%; */
+	text-align: left;
+	align-items: center;
+	justify-content:center;
+}
+
+.box
 {
 	float: left;
-	width: 500px;
+	margin: 10px;
+	padding: 10px;
+}
+.box-right
+{
+	float:none;
+	margin: 10px;
+	padding: 10px;
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+[class^="column"]
+{
+	margin: 0px;
+	padding: 0px;
+}
+.column1
+{
+	float: left;
+	width: 50%;
+	min-width: 1000px;
+	min-height: 1000px;
+	/* overflow-y:scroll; */
+	
+}
+.column2
+{
+	float: left;
+	width: 50%;
+	min-width: 500px;
+	min-height: 500px;
+	/* overflow-y:scroll; */
+}
+.column3
+{
+	float: left;
+	width: 33.33%;
+	min-width: 200px;
+	min-height: 1000px;
+	/* overflow-y:scroll; */
+}
+.column4
+{
+	float: left;
+	width: 25%;
+	min-width: 500px;
+	min-height: 1000px;
+	/* overflow-y:scroll; */
 }
 .left
 {
@@ -77,9 +229,190 @@ footer
 {
 	width: 75%;
 }
+.row
+{
+	display: flex;
+	/* align-items: center;
+	justify-content: center; */
+}
+
 .row::after
 {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+.icon
+{
+	width: 30px;
+	height: 50px;
+	/* text-align: center; */
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+.icon2
+{
+	width: 20px;
+	height: 30px;
+	text-align: center;
+}
+.icon3
+{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+.icon4
+{
+	width: 33px;
+	height: 20px;
+	text-align: center;
+}
+.contact
+{
+	text-align: left;
+	margin: 0px;
+	font-size: 20px;
+	width: 200px;
+}
+#copyright
+{
+	font-size: 16px;
+	color: gray;
+	vertical-align: bottom;
+	text-align: center;
+	/* border: 1px solid black; */
+}
+
+video
+{
+	width: 500px;
+	height: 300px;
+}
+.video-section
+{
+	position: relative;
+
+}
+.video-text
+{
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 20%;
+	left: 40%;
+}
+.image
+{
+	height: 300px;
+	width: 350px;
+	background-origin: padding-box;
+    background-clip: padding-box;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0px;
+	background-position: center top;
+	overflow: hidden;
+    background-repeat: no-repeat;
+	margin: 20px;
+    text-align: center;
+    /* position: relative; */
+	
+} 
+.zoom 
+{
+	transition: transform .2s;
+}
+  
+.zoom:hover
+{
+	-ms-transform: scale(1.1); 
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1); 
+}
+
+.zoom1 
+{
+	transition: transform .5s;
+}
+  
+.zoom1:hover
+{
+	-ms-transform: scale(2); 
+	-webkit-transform: scale(2);
+	transform: scale(2); 
+}
+
+input[type=text], select, textarea
+{
+	width: 100%;
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	/* margin-top: 6px; */
+	/* margin-bottom: 20px; */
+	/* margin-left: 100px; */
+	/* margin-right: 5px; */
+	/* resize: vertical; */
+}
+input[type=text]:focus::placeholder
+{
+	color: transparent;
+}
+input[type=text]:hover::placeholder
+{
+	color: transparent;
+}
+
+input[type=submit]
+{
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover
+{
+	background-color: #45a049;
+}
+
+.container
+{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+#message
+{
+	height: 200px;
+	width: 100%;
+	vertical-align: top;
+	
+}
+
+::placeholder
+{
+	color: lightgray;
+	font-style: italic;
+}
+
+.form
+{
+	box-sizing: border-box;
+	border-style: groove;
+	border-radius: 15px;
+	padding-left: 50px;
+	padding-right: 5px;
+	background-color: transparent;
+	float: left;
+	font-size: 20px;
 }
